@@ -14,20 +14,48 @@ jobs:
   build:
     name: Build & Test
     runs-on: ubuntu-latest
+
+    env:
+      CI: true
+      NODE_ENV: production
+      HUSKY: 0 # skip husky install in CI
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Built-in pnpm cache (packageManager field present)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
 
-      - name: Enable corepack and prepare pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+      - name: Enable Corepack
+        run: corepack enable
+
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+
+      # - name: Enable corepack and prepare pnpm
+      #   run: |
+      #     corepack enable
+      #     pnpm --version
+
+      # - name: Get pnpm store path
+      #   id: pnpm-store
+      #   run: echo "PNPM_STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      # - name: Cache pnpm store
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ${{ env.PNPM_STORE_PATH }}
+      #     key: pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+      #     restore-keys: |
+      #       pnpm-store-
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -39,13 +67,13 @@ jobs:
         run: pnpm run type-check
 
       - name: Build
-        run: pnpm run build
+        run: pnpm run build:ci
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist
+      # - name: Upload build artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: dist
+      #     path: dist
 #   deploy:
 #     name: Deploy to GitHub Pages
 #     runs-on: ubuntu-latest

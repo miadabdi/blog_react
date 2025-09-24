@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "pnpm@10.9.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "husky install",
+    "build:ci": "vite build",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
