@@ -32,7 +32,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <TerminalIcon className="h-7 w-7 text-primary" aria-hidden />
-              <span className="font-mono text-2xl font-bold">alex.dev</span>
+              <span className="font-mono text-2xl font-bold">miad.dev</span>
             </Link>
           </div>
 
