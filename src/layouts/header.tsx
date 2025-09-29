@@ -80,7 +80,7 @@ export default function Header() {
               variant="ghost"
               size="sm"
               className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => setIsMenuOpen((prev) => !prev)}
             >
               {isMenuOpen ? (
                 <XIcon className="h-5 w-5" aria-hidden />
