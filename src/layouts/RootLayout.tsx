@@ -2,6 +2,7 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 import { Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router';
 import { ThemeProvider } from '../components/ThemeProvider';
+import { Footer } from './footer';
 import Header from './header';
 
 export default function RootLayout() {
@@ -13,6 +14,7 @@ export default function RootLayout() {
           <div className="min-h-screen bg-background">
             <Header />
             <Outlet />
+            <Footer />
           </div>
         </ThemeProvider>
       </Suspense>
