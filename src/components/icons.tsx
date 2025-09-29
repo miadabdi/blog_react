@@ -100,3 +100,26 @@ export const MailIcon = createIcon([
   <path key="m1" d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />,
   <rect key="m2" x="2" y="4" width="20" height="16" rx="2" />,
 ]);
+
+export const CloudIcon = createIcon([
+  <path key="c1" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />,
+]);
+
+export const DatabaseIcon = createIcon([
+  <ellipse key="d1" cx="12" cy="5" rx="9" ry="3" />,
+  <path key="d2" d="M3 5V19A9 3 0 0 0 21 19V5" />,
+  <path key="d3" d="M3 12A9 3 0 0 0 21 12" />,
+]);
+
+export const DownloadIcon = createIcon([
+  <path key="d1" d="M12 15V3" />,
+  <path key="d2" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />,
+  <path key="d3" d="m7 10 5 5 5-5" />,
+]);
+
+export const ServerIcon = createIcon([
+  <rect key="s1" width="20" height="8" x="2" y="2" rx="2" ry="2" />,
+  <rect key="s2" width="20" height="8" x="2" y="14" rx="2" ry="2" />,
+  <line key="s3" x1="6" x2="6.01" y1="6" y2="6" />,
+  <line key="s4" x1="6" x2="6.01" y1="18" y2="18" />,
+]);
