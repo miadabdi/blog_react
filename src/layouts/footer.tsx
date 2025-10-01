@@ -9,7 +9,7 @@ export function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <TerminalIcon className="h-7 w-7 text-primary" />
-              <span className="font-mono text-2xl font-bold">alex.dev</span>
+              <span className="font-mono text-2xl font-bold">miad.dev</span>
             </div>
             <p className="text-base text-muted-foreground max-w-sm leading-normal">
               Full stack developer passionate about building scalable backend systems and robust

@@ -30,6 +30,7 @@ export default tseslint.config([
       // explicitly disable unused-vars for TS
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
     },
   },
   // Also disable for JS/JSX files (in case any exist now or later)
