@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { LocalThemeProviderProps } from '../stores/ThemeContext';
 import ThemeContext from '../stores/ThemeContext';
 
@@ -31,7 +31,6 @@ export function ThemeProvider({
   }, []);
 
   const resolvedTheme = getResolved(theme);
-  const disableTransitionClassRef = useRef<number | null>(null);
 
   const applyTheme = useCallback(
     (t: string) => {

@@ -1,6 +1,7 @@
 import { BlogSection } from '../layouts/blog-section';
 import { Hero } from '../layouts/hero';
 import { ProjectsSection } from '../layouts/projects-section';
+import { SkillsSection } from '../layouts/skills-section';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <BlogSection />
         <ProjectsSection />
+        <SkillsSection />
       </main>
     </div>
   );
