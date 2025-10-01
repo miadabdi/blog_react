@@ -123,3 +123,20 @@ export const ServerIcon = createIcon([
   <line key="s3" x1="6" x2="6.01" y1="6" y2="6" />,
   <line key="s4" x1="6" x2="6.01" y1="18" y2="18" />,
 ]);
+
+export const ArrowRightIcon = createIcon([
+  <line key="a1" x1="5" y1="12" x2="19" y2="12" />,
+  <polyline key="a2" points="12 5 19 12 12 19" />,
+]);
+
+export const CalendarIcon = createIcon([
+  <rect key="c1" x="3" y="4" width="18" height="18" rx="2" ry="2" />,
+  <line key="c2" x1="16" y1="2" x2="16" y2="6" />,
+  <line key="c3" x1="8" y1="2" x2="8" y2="6" />,
+  <line key="c4" x1="3" y1="10" x2="21" y2="10" />,
+]);
+
+export const ClockIcon = createIcon([
+  <circle key="c1" cx="12" cy="12" r="10" />,
+  <polyline key="c2" points="12 6 12 12 16 14" />,
+]);

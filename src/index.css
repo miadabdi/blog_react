@@ -99,11 +99,6 @@ html[data-theme='dark'] .btn-secondary:hover {
   }
 }
 
-/* Ensure secondary button has good contrast on hover in dark mode */
-.dark .btn-secondary:hover {
-  filter: brightness(1.1);
-}
-
 @theme inline {
   /* Provide fallbacks for fonts when not using Next/font */
   --font-geist-sans:
