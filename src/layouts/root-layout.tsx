@@ -1,7 +1,7 @@
-import ErrorBoundary from '@/components/ErrorBoundary';
+import ErrorBoundary from '@/components/error-boundary';
 import { Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router';
-import { ThemeProvider } from '../components/ThemeProvider';
+import { ThemeProvider } from '../components/theme-provider';
 import { Footer } from './footer';
 import Header from './header';
 

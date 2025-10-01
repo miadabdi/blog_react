@@ -1,5 +1,5 @@
-import RouteError from '@/components/RouteError';
-import RootLayout from '@/layouts/RootLayout';
+import RouteError from '@/components/route-error';
+import RootLayout from '@/layouts/root-layout';
 import Home from '@/pages/Home';
 import { createBrowserRouter } from 'react-router';
 

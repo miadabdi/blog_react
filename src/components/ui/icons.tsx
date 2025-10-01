@@ -140,3 +140,13 @@ export const ClockIcon = createIcon([
   <circle key="c1" cx="12" cy="12" r="10" />,
   <polyline key="c2" points="12 6 12 12 16 14" />,
 ]);
+
+export const ExternalLinkIcon = createIcon([
+  <path key="e1" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />,
+  <polyline key="e2" points="15 3 21 3 21 9" />,
+  <line key="e3" x1="10" y1="14" x2="21" y2="3" />,
+]);
+
+export const ZapIcon = createIcon([
+  <polygon key="z1" points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />,
+]);

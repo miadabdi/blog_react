@@ -1,3 +1,5 @@
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   CloudIcon,
   DatabaseIcon,
@@ -6,9 +8,7 @@ import {
   LinkedinIcon,
   MailIcon,
   ServerIcon,
-} from '@/components/icons';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+} from '@/components/ui/icons';
 
 export function Hero() {
   return (

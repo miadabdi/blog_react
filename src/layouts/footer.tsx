@@ -1,5 +1,5 @@
-import { GithubIcon, LinkedinIcon, MailIcon, TerminalIcon } from '@/components/icons';
 import { Button } from '@/components/ui/button';
+import { GithubIcon, LinkedinIcon, MailIcon, TerminalIcon } from '@/components/ui/icons';
 
 export function Footer() {
   return (

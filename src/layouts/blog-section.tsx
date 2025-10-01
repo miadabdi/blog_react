@@ -1,7 +1,7 @@
-import { ArrowRightIcon, CalendarIcon, ClockIcon } from '@/components/icons';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { ArrowRightIcon, CalendarIcon, ClockIcon } from '@/components/ui/icons';
 import { Link } from 'react-router-dom';
 // Replaced Next.js Image with standard img tag
 

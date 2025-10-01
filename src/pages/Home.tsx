@@ -1,5 +1,6 @@
-import { BlogSection } from '../components/BlogSection';
+import { BlogSection } from '../layouts/blog-section';
 import { Hero } from '../layouts/hero';
+import { ProjectsSection } from '../layouts/projects-section';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="space-y-12">
         <Hero />
         <BlogSection />
+        <ProjectsSection />
       </main>
     </div>
   );

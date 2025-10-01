@@ -1,5 +1,7 @@
 'use client';
 
+import { ThemeToggle } from '@/components/theme-toggle';
+import { Button } from '@/components/ui/button';
 import {
   CodeIcon,
   FileTextIcon,
@@ -7,9 +9,7 @@ import {
   TerminalIcon,
   UserIcon,
   XIcon,
-} from '@/components/icons';
-import { ThemeToggle } from '@/components/ThemeToggle';
-import { Button } from '@/components/ui/button';
+} from '@/components/ui/icons';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 

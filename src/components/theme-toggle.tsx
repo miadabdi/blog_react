@@ -1,8 +1,8 @@
 'use client';
 
-import { MoonIcon, SunIcon } from '@/components/icons';
 import { Button } from '@/components/ui/button';
-import useTheme from '../hooks/UseTheme';
+import { MoonIcon, SunIcon } from '@/components/ui/icons';
+import useTheme from '../hooks/use-theme';
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
