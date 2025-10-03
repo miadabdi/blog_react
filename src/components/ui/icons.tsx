@@ -69,6 +69,14 @@ export const FileTextIcon = createIcon([
   <line key="f4" x1="16" y1="17" x2="8" y2="17" />,
 ]);
 
+export const FolderOpenIcon = createIcon([
+  <path
+    key="fo1"
+    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+  />,
+  <path key="fo2" d="M2 11h20" />,
+]);
+
 export const TerminalIcon = createIcon([
   <polyline key="t1" points="4 17 10 11 4 5" />,
   <line key="t2" x1="12" y1="19" x2="20" y2="19" />,
@@ -161,4 +169,30 @@ export const WrenchIcon = createIcon([
     key="w1"
     d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
   />,
+]);
+
+export const TagIcon = createIcon([
+  <path
+    key="t1"
+    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+  />,
+  <line key="t2" x1="7" y1="7" x2="7.01" y2="7" />,
+]);
+
+export const TrendingUpIcon = createIcon([
+  <polyline key="tu1" points="22 7 13.5 15.5 8.5 10.5 2 17" />,
+  <polyline key="tu2" points="16 7 22 7 22 13" />,
+]);
+
+export const CalendarDaysIcon = createIcon([
+  <rect key="cd1" x="3" y="4" width="18" height="18" rx="2" ry="2" />,
+  <line key="cd2" x1="16" y1="2" x2="16" y2="6" />,
+  <line key="cd3" x1="8" y1="2" x2="8" y2="6" />,
+  <line key="cd4" x1="3" y1="10" x2="21" y2="10" />,
+  <path key="cd5" d="M8 14h.01" />,
+  <path key="cd6" d="M12 14h.01" />,
+  <path key="cd7" d="M16 14h.01" />,
+  <path key="cd8" d="M8 18h.01" />,
+  <path key="cd9" d="M12 18h.01" />,
+  <path key="cd10" d="M16 18h.01" />,
 ]);

@@ -2,6 +2,8 @@ import RouteError from '@/components/route-error';
 import RootLayout from '@/layouts/root-layout';
 import Home from '@/pages/Home';
 import { createBrowserRouter } from 'react-router-dom';
+import AdminDashboard from './pages/Admin/AdminDashboard';
+import AdminLayout from './pages/Admin/AdminLayout';
 import { BlogPage } from './pages/BlogPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
@@ -28,6 +30,16 @@ const router = createBrowserRouter([
       {
         path: 'projects/:id',
         element: <ProjectDetailPage />,
+      },
+      {
+        path: 'admin',
+        element: <AdminLayout />,
+        children: [
+          {
+            index: true,
+            element: <AdminDashboard />,
+          },
+        ],
       },
     ],
   },
