@@ -68,8 +68,8 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
     featured: true,
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'realtime-analytics-pipeline',
@@ -79,8 +79,8 @@ export const projects: Project[] = [
     tech: ['Python', 'Kafka', 'PostgreSQL', 'Grafana'],
     github: '#',
     demo: '#',
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'api-gateway-microservices',
@@ -90,8 +90,8 @@ export const projects: Project[] = [
     tech: ['Go', 'Kong', 'Consul', 'Prometheus'],
     github: '#',
     demo: '#',
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'blockchain-supply-chain',
@@ -102,8 +102,8 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
     featured: true,
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'ml-recommendation-engine',
@@ -114,8 +114,8 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
     featured: true,
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'iot-monitoring-platform',
@@ -125,8 +125,8 @@ export const projects: Project[] = [
     tech: ['Node.js', 'MQTT', 'InfluxDB', 'Vue.js'],
     github: '#',
     demo: '#',
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'serverless-image-processor',
@@ -136,8 +136,8 @@ export const projects: Project[] = [
     tech: ['AWS Lambda', 'S3', 'CloudFront', 'Sharp'],
     github: '#',
     demo: '#',
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'graphql-federated-api',
@@ -147,8 +147,8 @@ export const projects: Project[] = [
     tech: ['GraphQL', 'Apollo', 'TypeScript', 'Redis'],
     github: '#',
     demo: '#',
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
   {
     id: 'cicd-automation-platform',
@@ -158,7 +158,11 @@ export const projects: Project[] = [
     tech: ['Jenkins', 'GitLab CI', 'Ansible', 'Terraform'],
     github: '#',
     demo: '#',
-    longDescription: '<p>Detailed project description...</p>',
-    images: ['/placeholder.jpg'],
+    content: '<p>Detailed project description...</p>',
+    images: ['/database-performance-monitoring-dashboard.jpg'],
   },
 ];
+
+export function getProject(id: string): Project | undefined {
+  return projects.find((p) => p.id === id);
+}

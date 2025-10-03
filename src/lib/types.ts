@@ -18,6 +18,6 @@ export type Project = {
   github?: string;
   demo?: string;
   featured?: boolean;
-  longDescription?: string;
+  content: string;
   images?: string[];
 };

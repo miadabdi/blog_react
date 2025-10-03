@@ -3,6 +3,7 @@ import RootLayout from '@/layouts/root-layout';
 import Home from '@/pages/Home';
 import { createBrowserRouter } from 'react-router-dom';
 import { BlogPage } from './pages/BlogPage';
+import { ProjectDetailPage } from './pages/ProjectDetailPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         element: <ProjectsPage />,
         path: 'projects',
+      },
+      {
+        path: 'projects/:id',
+        element: <ProjectDetailPage />,
       },
     ],
   },
