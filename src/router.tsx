@@ -4,6 +4,8 @@ import Home from '@/pages/Home';
 import { createBrowserRouter } from 'react-router-dom';
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import AdminLayout from './pages/Admin/AdminLayout';
+import PostsAdmin from './pages/Admin/PostsAdmin';
+import ProjectsAdmin from './pages/Admin/ProjectsAdmin';
 import { BlogPage } from './pages/BlogPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <AdminDashboard />,
+          },
+          {
+            path: 'posts',
+            element: <PostsAdmin />,
+          },
+          {
+            path: 'projects',
+            element: <ProjectsAdmin />,
           },
         ],
       },
