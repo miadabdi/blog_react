@@ -166,3 +166,7 @@ export const projects: Project[] = [
 export function getProject(id: string): Project | undefined {
   return projects.find((p) => p.id === id);
 }
+
+export function getPost(id: string): Post | undefined {
+  return posts.find((p) => p.id === id);
+}

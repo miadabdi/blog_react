@@ -3,6 +3,7 @@ import RootLayout from '@/layouts/root-layout';
 import Home from '@/pages/Home';
 import { createBrowserRouter } from 'react-router-dom';
 import { BlogPage } from './pages/BlogPage';
+import { BlogPostPage } from './pages/BlogPostPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         element: <BlogPage />,
         path: 'blog',
+      },
+      {
+        path: 'blog/:id',
+        element: <BlogPostPage />,
       },
       {
         element: <ProjectsPage />,
