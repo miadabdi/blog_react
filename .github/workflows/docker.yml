@@ -11,6 +11,7 @@ on:
 env:
   IMG_NAME: 'blog-react'
   TAG: 'latest'
+  USERNAME: ${{ secrets.DOCKER_USERNAME }}
 
 jobs:
   on-success:
@@ -52,7 +53,6 @@ jobs:
         with:
           context: .
           push: true
-          target: production
           platforms: linux/amd64,linux/arm64
           tags: |
             ${{ env.USERNAME }}/${{ env.IMG_NAME }}:${{ env.TAG }}
