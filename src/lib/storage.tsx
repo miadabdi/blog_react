@@ -82,4 +82,83 @@ export const projects: Project[] = [
     longDescription: '<p>Detailed project description...</p>',
     images: ['/placeholder.jpg'],
   },
+  {
+    id: 'api-gateway-microservices',
+    title: 'API Gateway & Service Mesh',
+    description:
+      'Enterprise-grade API gateway with service discovery, load balancing, and circuit breaker patterns.',
+    tech: ['Go', 'Kong', 'Consul', 'Prometheus'],
+    github: '#',
+    demo: '#',
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
+  {
+    id: 'blockchain-supply-chain',
+    title: 'Blockchain Supply Chain Tracker',
+    description:
+      'Decentralized supply chain management system with smart contracts and transparency tracking.',
+    tech: ['Solidity', 'Ethereum', 'React', 'Web3.js'],
+    github: '#',
+    demo: '#',
+    featured: true,
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
+  {
+    id: 'ml-recommendation-engine',
+    title: 'ML-Powered Recommendation Engine',
+    description:
+      'Personalized recommendation system using collaborative filtering and deep learning models.',
+    tech: ['Python', 'TensorFlow', 'FastAPI', 'MongoDB'],
+    github: '#',
+    demo: '#',
+    featured: true,
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
+  {
+    id: 'iot-monitoring-platform',
+    title: 'IoT Device Monitoring Platform',
+    description:
+      'Real-time monitoring and alerting platform for IoT devices with MQTT protocol and time-series data.',
+    tech: ['Node.js', 'MQTT', 'InfluxDB', 'Vue.js'],
+    github: '#',
+    demo: '#',
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
+  {
+    id: 'serverless-image-processor',
+    title: 'Serverless Image Processing Service',
+    description:
+      'Auto-scaling image optimization and transformation service using serverless architecture.',
+    tech: ['AWS Lambda', 'S3', 'CloudFront', 'Sharp'],
+    github: '#',
+    demo: '#',
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
+  {
+    id: 'graphql-federated-api',
+    title: 'Federated GraphQL API',
+    description:
+      'Unified GraphQL API layer aggregating multiple microservices with Apollo Federation.',
+    tech: ['GraphQL', 'Apollo', 'TypeScript', 'Redis'],
+    github: '#',
+    demo: '#',
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
+  {
+    id: 'cicd-automation-platform',
+    title: 'CI/CD Automation Platform',
+    description:
+      'Custom continuous integration and deployment platform with pipeline orchestration and rollback capabilities.',
+    tech: ['Jenkins', 'GitLab CI', 'Ansible', 'Terraform'],
+    github: '#',
+    demo: '#',
+    longDescription: '<p>Detailed project description...</p>',
+    images: ['/placeholder.jpg'],
+  },
 ];

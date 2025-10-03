@@ -24,7 +24,7 @@ export function BlogPage() {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
-          {blogPosts.map((post, index) => (
+          {blogPosts.map((post) => (
             <Card
               key={post.id}
               className={`group hover:shadow-xl transition-all duration-300 overflow-hidden border-0 bg-card/50 backdrop-blur ${
