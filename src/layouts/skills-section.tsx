@@ -1,3 +1,6 @@
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   CloudIcon,
   CodeIcon,
@@ -5,10 +8,7 @@ import {
   DownloadIcon,
   ServerIcon,
   WrenchIcon,
-} from '@/components/icons';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+} from '@/components/ui/icons';
 
 const skillCategories = [
   {

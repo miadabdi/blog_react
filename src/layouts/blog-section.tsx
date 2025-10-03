@@ -3,46 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRightIcon, CalendarIcon, ClockIcon } from '@/components/ui/icons';
 import { Link } from 'react-router-dom';
-// Replaced Next.js Image with standard img tag
-
-const blogPosts = [
-  {
-    title: 'Building Microservices with Node.js and Docker',
-    description:
-      'A comprehensive guide to architecting scalable microservices using containerization and orchestration.',
-    date: '2024-01-15',
-    readTime: '8 min read',
-    tags: ['Node.js', 'Docker', 'Microservices'],
-    featured: true,
-    image: '/microservices-architecture-diagram-with-containers.jpg',
-  },
-  {
-    title: 'Optimizing Database Performance in Production',
-    description:
-      'Strategies for query optimization, indexing, and connection pooling in high-traffic applications.',
-    date: '2024-01-08',
-    readTime: '12 min read',
-    tags: ['PostgreSQL', 'Performance', 'Database'],
-    image: '/database-performance-monitoring-dashboard.jpg',
-  },
-  {
-    title: 'Infrastructure as Code with Terraform',
-    description: 'Managing cloud infrastructure declaratively and implementing GitOps workflows.',
-    date: '2024-01-01',
-    readTime: '10 min read',
-    tags: ['Terraform', 'AWS', 'DevOps'],
-    image: '/terraform-infrastructure-code-on-screen.jpg',
-  },
-  {
-    title: 'Implementing Event-Driven Architecture',
-    description:
-      'Designing resilient systems with message queues, event sourcing, and CQRS patterns.',
-    date: '2023-12-20',
-    readTime: '15 min read',
-    tags: ['Architecture', 'Events', 'Patterns'],
-    image: '/event-driven-architecture-flow-diagram.jpg',
-  },
-];
+import { posts as blogPosts } from '../lib/storage';
 
 export function BlogSection() {
   return (

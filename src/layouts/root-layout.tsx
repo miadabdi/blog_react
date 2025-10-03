@@ -1,6 +1,6 @@
 import ErrorBoundary from '@/components/error-boundary';
 import { Suspense } from 'react';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet, useLocation } from 'react-router-dom';
 import { ThemeProvider } from '../components/theme-provider';
 import { Footer } from './footer';
 import Header from './header';

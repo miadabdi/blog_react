@@ -129,6 +129,11 @@ export const ArrowRightIcon = createIcon([
   <polyline key="a2" points="12 5 19 12 12 19" />,
 ]);
 
+export const ArrowLeftIcon = createIcon([
+  <line key="a1" x1="19" y1="12" x2="5" y2="12" />,
+  <polyline key="a2" points="12 19 5 12 12 5" />,
+]);
+
 export const CalendarIcon = createIcon([
   <rect key="c1" x="3" y="4" width="18" height="18" rx="2" ry="2" />,
   <line key="c2" x1="16" y1="2" x2="16" y2="6" />,
@@ -149,4 +154,11 @@ export const ExternalLinkIcon = createIcon([
 
 export const ZapIcon = createIcon([
   <polygon key="z1" points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />,
+]);
+
+export const WrenchIcon = createIcon([
+  <path
+    key="w1"
+    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+  />,
 ]);
